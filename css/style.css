@@ -1,0 +1,360 @@
+:root {
+	--blue: #524fff;
+	--navy: #101041;
+	--softpurple: #e5e4ff;
+	--grey: #dfe2e7;
+	--darkgrey: #949293;
+	--darkgrey2: #e7ebed;
+	--softgrey: #f5f5f5;
+	--white: #fff;
+	--purple: #6261d8;
+	--green: #316762;
+	--fwbold: 700;
+	--fwextrabold: 800;
+	--fwsemibold: 600;
+	--fwmedium: 500;
+	--fwregular: 400;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--softgrey);
+}
+
+.title-span {
+	color: var(--blue);
+}
+
+.big-header {
+	font-weight: var(--fwextrabold);
+	margin: 0;
+	font-size: 48px;
+	color: var(--navy);
+}
+
+.medium-header {
+	font-weight: var(--fwbold);
+	margin: 0;
+	font-size: 28px;
+	color: var(--navy);
+}
+
+.small-header {
+	font-weight: var(--fwbold);
+	margin: 0;
+	font-size: 22px;
+	color: var(--navy);
+}
+
+.primary-copy {
+	font-size: 16px;
+	margin: 0;
+	line-height: 28px;
+	font-weight: var(--fwregular);
+	color: var(--darkgrey);
+}
+
+.btn-primary {
+	padding: 12px 20px 12px 20px;
+	background-color: var(--blue);
+	color: var(--white);
+	font-size: 16px;
+	font-weight: var(--fwsemibold);
+	border-radius: 50px;
+	border: none;
+}
+
+.text-button {
+	text-decoration: none;
+	color: var(--blue);
+}
+
+.text-button:hover {
+	text-decoration: underline;
+	color: var(--navy);
+}
+
+.btn-primary:hover {
+	background-color: var(--navy);
+	color: var(--white);
+}
+
+.btn-secondary {
+	padding: 12px 20px 12px 20px;
+	background-color: var(--grey);
+	color: #101041;
+	font-size: 16px;
+	font-weight: var(--fwmedium);
+	border-radius: 50px;
+	border: none;
+}
+
+.btn-secondary:hover {
+	background-color: var(--navy);
+	color: var(--white) !important;
+}
+
+.navbar-nav .nav-item a:hover {
+	color: var(--blue);
+	transition: all 0.2s ease;
+	font-weight: var(--fwsemibold);
+}
+
+.navbar-nav .nav-item a {
+	color: var(--navy);
+	transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-item {
+	padding-left: 30px;
+	font-weight: var(--fwregular);
+}
+
+.navbar {
+	--bs-navbar-padding-y: 0;
+}
+
+.navbar-brand {
+	font-weight: var(--fwbold);
+	font-size: 28px;
+	width: 15%; /* Ancho del 50% del contenedor */
+  	height: auto;
+}
+
+.quickcount-navbar {
+	padding: 20px;
+	background: var(--white);
+	border-bottom-left-radius: 26px;
+	border-bottom-right-radius: 26px;
+}
+
+.badge {
+	padding: 8px 16px 8px 12px;
+	background: var(--darkgrey2);
+	border-radius: 50px;
+	width: 330px;
+}
+
+.small-copy {
+	font-size: 15px;
+	color: var(--navy);
+	font-weight: var(--fwsemibold);
+}
+
+.badge .small-copy {
+	margin: 0;
+}
+
+.big-headerr {
+	font-weight: var(--fwextrabold);
+	margin: 0;
+	font-size: 45px;
+	color: var(--navy);
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mt-70 {
+	margin-top: 70px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mr-30 {
+	margin-right: 30px;
+}
+
+.card-brand {
+	width: 220px;
+	height: 110px;
+	border-radius: 16px;
+	background: var(--darkgrey2);
+	text-align: center;
+}
+
+.card-brand .logo {
+	height: 50px;
+	margin-top: 30px;
+}
+
+.carousel-wrapper {
+	display: flex;
+	height: 110px;
+	animation: moveSlidesToLeft 16s linear infinite;
+}
+
+.carousel {
+	justify-content: flex-end;
+	display: flex;
+	flex-direction: row;
+	height: 110px;
+	overflow: hidden;
+}
+
+.carrusel {
+	width: 100%; /* Ancho del 50% del contenedor */
+  	height: auto;
+}
+
+@keyframes moveSlidesToLeft {
+	0% {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes moveSlidesToRight {
+	0% {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+.carousel-wrapper-left {
+	display: flex;
+	height: 110px;
+	animation: moveSlidesToRight 16s linear infinite;
+}
+
+.carousel-left {
+	justify-content: flex-end;
+	display: flex;
+	flex-direction: row;
+	height: 110px;
+	overflow: hidden;
+}
+
+.features .features-wrapper .big-feature-card {
+	padding: 30px;
+	border-radius: 16px;
+	background: var(--white);
+	cursor: pointer;
+	padding-bottom: 57px;
+}
+
+.features-wrapper:hover .big-feature-card:not(:hover) {
+	filter: blur(3px);
+	transition: all 0.3s ease;
+}
+
+.features-wrapper:hover .small-feature-card:not(:hover) {
+	filter: blur(3px);
+	transition: all 0.3s ease;
+}
+
+.features .features-wrapper .icon {
+	width: 60px;
+	float: left;
+	height: 200px;
+	margin-right: 18px;
+}
+
+.features .features-wrapper h3 {
+	padding-top: 16px;
+}
+
+.features .features-wrapper .icon img {
+	width: 60px;
+	height: 60px;
+}
+
+.features .features-wrapper .small-feature-card {
+	padding: 30px;
+	border-radius: 16px;
+	background: var(--white);
+	cursor: pointer;
+	padding-bottom: 30px;
+}
+
+.features .features-wrapper .small-feature-card .icon {
+	height: 100px;
+}
+
+textarea.form-control {
+	border-radius: 16px;
+}
+
+.form-control {
+	border-radius: 50px;
+	border: 0;
+	background: var(--white);
+	padding: 12px 20px 12px 20px;
+	box-shadow: var(--darkgrey2) 0px 0px 0px 1px;
+}
+
+.form-select {
+	border-radius: 50px;
+	border: 0;
+	background: var(--white);
+	padding: 12px 20px 12px 20px;
+	background-image: url('../images/dropd.svg');
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	background-size: 20px;
+	box-shadow: var(--darkgrey2) 0px 0px 0px 1px;
+}
+
+.footer-section {
+	padding: 20px;
+	background: var(--white);
+	border-top-left-radius: 26px;
+	border-top-right-radius: 26px;
+}
+
+#carouselExampleIndicators {
+    width: 50%;
+    height: 600px; /* Establece una altura fija para todas las imágenes */
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    width: auto; /* Ajusta el ancho automáticamente según la altura fija */
+    height: 100%;
+    object-fit: cover;
+}
+
+.fade .carousel-inner .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade .carousel-inner .carousel-item.active,
+.fade .carousel-inner .carousel-item-next,
+.fade .carousel-inner .carousel-item-prev {
+    opacity: 1;
+}
+
+.fade .carousel-inner .carousel-item-next,
+.fade .carousel-inner .carousel-item-prev {
+    transform: translateX(0);
+}
+
+
+a {
+    text-decoration: none; /* Desactiva el subrayado de los enlaces */
+}
+
+
+a:link, a:visited {
+    color: #007bff; /* Cambiar el color */
+}
+
